@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^404$ /404.html [L]
+RewriteRule ^dashboard$ /dashboard.html [L]
+RewriteRule ^recipeSave/([0-9]+)$ /actions/recipeSave.inc.php?idRep=$1 [L]
+
+ErrorDocument 404 /404.html
